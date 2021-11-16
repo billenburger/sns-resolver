@@ -1,0 +1,32 @@
+{
+  "name": "address-transform",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/app.js",
+  "bin": {
+    "address-transform": "dist/app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "pkg . --targets win,linux --output address-transform"
+  },
+  "pkg": {
+    "scripts": "build/**/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/spl-name-service": "^0.1.3",
+    "@solana/web3.js": "^1.30.2",
+    "commander": "^2.20.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}
