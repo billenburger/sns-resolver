@@ -1,5 +1,5 @@
 # sns-resolver
-Automatically parse a list of Bondida Solana Naming Service (SNS), @twitter, and standard Solana wallets, output to file. 
+Automatically parse a list of Bonfida Solana Naming Service (SNS), @twitter, and standard Solana wallets, output to file. 
 
 Requirements:
 `node.js`
